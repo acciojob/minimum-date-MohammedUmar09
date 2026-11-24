@@ -1,16 +1,16 @@
 function minDate(dates) {
   //write you code here
-	let min = infinity;
-	let minIndex = 0;
+
 	for(let i=0; i<dates.length; i++){
 		let date = dates[i];
-		let day = Number(date[date.length-2] + date[date.length-1]);
-		if(day < min){
-			min = day;
-			minIndex = i;
-		}
+		
+		let day = date.substring(0,4);
+		let month = date.substring(5,7);
+		let year = date.substring(8,10);
+
+		
 	}
-	return dates[minIndex];
+	
 }
 
 // Do not change the code
